@@ -3,7 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 14
 VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Core", "Game.Core\Game.Core.csproj", "{8608B852-7F36-46A0-AB0C-01131D05E03A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Game.Core.Test", "Game.Core.Test\Game.Core.Test.csproj", "{026E6BE3-C2EA-42B1-8DCC-E75E4DB1261E}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8608B852-7F36-46A0-AB0C-01131D05E03A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8608B852-7F36-46A0-AB0C-01131D05E03A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8608B852-7F36-46A0-AB0C-01131D05E03A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8608B852-7F36-46A0-AB0C-01131D05E03A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{026E6BE3-C2EA-42B1-8DCC-E75E4DB1261E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{026E6BE3-C2EA-42B1-8DCC-E75E4DB1261E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{026E6BE3-C2EA-42B1-8DCC-E75E4DB1261E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{026E6BE3-C2EA-42B1-8DCC-E75E4DB1261E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection

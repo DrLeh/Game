@@ -1,0 +1,87 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{8608B852-7F36-46A0-AB0C-01131D05E03A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Game.Core</RootNamespace>
+    <AssemblyName>Game.Core</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Ability.cs" />
+    <Compile Include="DamageCalculator.cs" />
+    <Compile Include="Exceptions\DuplicateModifierException.cs" />
+    <Compile Include="Extensions\EnumerableExtensions.cs" />
+    <Compile Include="Gems\Fireball.cs" />
+    <Compile Include="Gems\IncreasedFireDamageSupport.cs" />
+    <Compile Include="Gems\SkillGem.cs" />
+    <Compile Include="IItem.cs" />
+    <Compile Include="IPlayer.cs" />
+    <Compile Include="Items\Armor.cs" />
+    <Compile Include="Items\Armors\Amulets\Amulets.cs" />
+    <Compile Include="Items\Generation\WeaponGeneration.cs" />
+    <Compile Include="Items\Item.cs" />
+    <Compile Include="Items\Generation\ItemGenerator.cs" />
+    <Compile Include="Items\SocketableEquipment.cs" />
+    <Compile Include="Items\Weapon.cs" />
+    <Compile Include="Items\Weapons\Axe.cs" />
+    <Compile Include="Items\Weapons\Sword.cs" />
+    <Compile Include="Modifiers\Elemental\ColdDamage.cs" />
+    <Compile Include="Modifiers\Elemental\FireDamage.cs" />
+    <Compile Include="IModifier.cs" />
+    <Compile Include="Modifiers\IncreasedDamageModifier.cs" />
+    <Compile Include="Modifiers\ItemModifierCollection.cs" />
+    <Compile Include="Modifiers\ModifierApplicator.cs" />
+    <Compile Include="Modifiers\ModifierFilter.cs" />
+    <Compile Include="Modifiers\Item\MoreDamageModifier.cs" />
+    <Compile Include="Modifiers\Item\IncreasedDamageModifier.cs" />
+    <Compile Include="Modifiers\ModifierCollection.cs" />
+    <Compile Include="ItemNameGenerator.cs" />
+    <Compile Include="Modifiers\MoreDamageModifier.cs" />
+    <Compile Include="Num.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RandomGen.cs" />
+    <Compile Include="Utilities\EnumerationExtensions.cs" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
